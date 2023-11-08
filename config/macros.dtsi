@@ -43,7 +43,7 @@ ignored-key-positions = <29>, <46>;
 };
 cmd_tabber: cmd_tabber {
 compatible = "zmk,behavior-tri-state";
-label = "alt_tabber";
+label = "cmd_tabber";
 #binding-cells = <0>;
 bindings = <&kt LCMD>, <&kp TAB>, <&kt LCMD>;
 ignored-key-positions = <29>, <46>;
