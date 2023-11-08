@@ -1,12 +1,12 @@
 [
-  {
-    "code": "&alt_tabber",
-    "name": "AltTabber",
-    "params": []
-  },
-  {
-    "code": "&cmd_tabber",
-    "name": "CmdTabber",
-    "params": []
-  }
+	{
+		"code": "&alt_tabber",
+		"name": "AltTabber",
+		"params": []
+	},
+	{
+		"code": "&cmd_tabber",
+		"name": "CmdTabber",
+		"params": []
+	}
 ]

@@ -79,11 +79,11 @@
 
         layer_Move {
             bindings = <
- &trans          &trans        &trans    &trans         &trans         &trans            &trans                                                  &trans    &trans    &trans  &trans     &trans  &trans  &trans
- &trans           &none  &kp LG(LEFT)    &kp UP  &kp LG(RIGHT)    &kp PAGE_UP            &trans                                                  &trans    &trans    &trans  &trans     &trans  &trans  &trans
- &trans  &kp LEFT_SHIFT      &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN            &trans  &trans  &trans                  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
- &trans          &trans        &trans    &trans         &trans         &trans                            &trans                  &trans                    &trans    &trans  &trans     &trans  &trans  &trans
- &trans          &trans        &trans    &trans         &trans                           &trans  &trans  &trans                  &trans  &trans  &trans              &trans  &trans     &trans  &trans  &trans
+ &trans          &trans        &trans    &trans         &trans       &trans               &trans                                                  &trans    &trans    &trans  &trans     &trans  &trans  &trans
+ &trans           &none  &kp LG(LEFT)    &kp UP  &kp LG(RIGHT)  &alt_tabber            &kp PG_UP                                                  &trans    &trans    &trans  &trans     &trans  &trans  &trans
+ &trans  &kp LEFT_SHIFT      &kp LEFT  &kp DOWN      &kp RIGHT  &cmd_tabber            &kp PG_DN  &trans  &trans                  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+ &trans          &trans        &trans    &trans         &trans       &trans                               &trans                  &trans                    &trans    &trans  &trans     &trans  &trans  &trans
+ &trans          &trans        &trans    &trans         &trans                            &trans  &trans  &trans                  &trans  &trans  &trans              &trans  &trans     &trans  &trans  &trans
             >;
         };
 
