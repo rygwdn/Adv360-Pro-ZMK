@@ -38,7 +38,7 @@
        "&trans",         "&trans",       "&trans",   "&trans",        "&trans",      "&trans",              "&trans",                                                             "&trans",   "&trans",   "&trans", "&trans",    "&trans", "&trans", "&trans",
        "&trans",          "&none", "&kp LG(LEFT)",   "&kp UP", "&kp LG(RIGHT)", "&alt_tabber",           "&kp PG_UP",                                                             "&trans",   "&trans",   "&trans", "&trans",    "&trans", "&trans", "&trans",
        "&trans", "&kp LEFT_SHIFT",     "&kp LEFT", "&kp DOWN",     "&kp RIGHT", "&cmd_tabber",           "&kp PG_DN", "&trans", "&trans",                     "&trans", "&trans", "&trans", "&kp LEFT", "&kp DOWN", "&kp UP", "&kp RIGHT", "&trans", "&trans",
-       "&trans",         "&trans",       "&trans",   "&trans",        "&trans",      "&trans",                                  "&trans",                     "&trans",                       "&trans",   "&trans", "&trans",    "&trans", "&trans", "&trans",
+       "&trans",         "&trans", "&kp LC(LEFT)",   "&trans", "&kp LC(RIGHT)",      "&trans",                                  "&trans",                     "&trans",                       "&trans",   "&trans", "&trans",    "&trans", "&trans", "&trans",
        "&trans",         "&trans",       "&trans",   "&trans",        "&trans",                             "&trans", "&trans", "&trans",                     "&trans", "&trans", "&trans",               "&trans", "&trans",    "&trans", "&trans", "&trans"
     ]
   ]

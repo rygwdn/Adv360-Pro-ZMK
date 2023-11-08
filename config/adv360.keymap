@@ -1,4 +1,3 @@
-
 /*
  * Copyright (c) 2020 The ZMK Contributors
  *
@@ -30,6 +29,22 @@
         quick_tap_ms = <175>;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
+    };
+
+    alt_tabber: alt_tabber {
+        compatible = "zmk,behavior-tri-state";
+        label = "alt_tabber";
+        #binding-cells = <0>;
+        bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+        ignored-key-positions = <29>, <46>;
+    };
+
+    cmd_tabber: cmd_tabber {
+        compatible = "zmk,behavior-tri-state";
+        label = "cmd_tabber";
+        #binding-cells = <0>;
+        bindings = <&kt LCMD>, <&kp TAB>, <&kt LCMD>;
+        ignored-key-positions = <29>, <46>;
     };
   };
 
@@ -82,7 +97,7 @@
  &trans          &trans        &trans    &trans         &trans       &trans               &trans                                                  &trans    &trans    &trans  &trans     &trans  &trans  &trans
  &trans           &none  &kp LG(LEFT)    &kp UP  &kp LG(RIGHT)  &alt_tabber            &kp PG_UP                                                  &trans    &trans    &trans  &trans     &trans  &trans  &trans
  &trans  &kp LEFT_SHIFT      &kp LEFT  &kp DOWN      &kp RIGHT  &cmd_tabber            &kp PG_DN  &trans  &trans                  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
- &trans          &trans        &trans    &trans         &trans       &trans                               &trans                  &trans                    &trans    &trans  &trans     &trans  &trans  &trans
+ &trans          &trans  &kp LC(LEFT)    &trans  &kp LC(RIGHT)       &trans                               &trans                  &trans                    &trans    &trans  &trans     &trans  &trans  &trans
  &trans          &trans        &trans    &trans         &trans                            &trans  &trans  &trans                  &trans  &trans  &trans              &trans  &trans     &trans  &trans  &trans
             >;
         };
