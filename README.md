@@ -1,19 +1,10 @@
 # Kinesis Advantage 360 Pro ZMK Config
 
-## Modifying the keymap
+This is a fork of the default Advantage 360 configuration with customizations.
 
-[The ZMK documentation](https://zmk.dev/docs) covers both basic and advanced functionality and has a table of OS compatibility for keycodes. Please note that the RGB Underglow, Backlight and Power Management sections are not relevant to the Advantage 360 Pro's custom ZMK fork. For more information see [this note](#note)
-
-There is a web based GUI available for editing the keymap. It is available at https://kinesiscorporation.github.io/Adv360-Pro-GUI. This repository is also compatible with certain other web based ZMK keymap editors however they may have keycodes or behaviours that are not implemented on the 360 Pro and could cause unusual behaviour or build failures. Furthermore changes made on other keymap editors may not be compatible if one goes back to using the Kinesis GUI.
-
-Certain ZMK features (e.g. combos) require knowing the exact key positions in the matrix. They can be found in both image and text format [here](assets/key-positions.md)
-
-## Building the Firmware with GitHub Actions
-
-### Setup
-
-1. Fork this repo.
-2. Enable GitHub Actions on your fork.
+1. This fork applies my custom keymap which is edited via the web based GUI at https://kinesiscorporation.github.io/Adv360-Pro-GUI.
+2. This applies some different macros/behaviours by modifying config/adv360.keymap.template
+3. This uses a different zmk firmware branch to apply some custom PRs for new behaviours. Specifically this adds "Swapper implementation" https://github.com/zmkfirmware/zmk/pull/1366 for simpler alt-tab/cmd-tab logic
 
 ### Build firmware
 
