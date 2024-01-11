@@ -14,7 +14,7 @@
 #include <behaviors.dtsi>
 {{behaviour_includes}}
 
-#define HYP(key) LS(LC(LA(LG(key)))
+#define HYP(key) LS(LC(LA(LG(key))))
 #define HYPER LS(LC(LA(LGUI)))
 
 / {
