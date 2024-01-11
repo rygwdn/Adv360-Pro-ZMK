@@ -119,6 +119,26 @@
 		"type": "UD"
 	},
 	{
+	    "names": [
+	      "HYP(code)",
+	      "HYPER"
+	    ],
+	    "symbol": "❖",
+	    "description": "Hyper Key (CTRL + COMMAND + ALT + SHIFT)",
+	    "context": "Keyboard",
+	    "clarify": false,
+	    "documentation": "",
+	    "os": {
+	      "windows": true,
+	      "linux": true,
+	      "android": true,
+	      "macos": true,
+	      "ios": true
+	    },
+	    "footnotes": {},
+	    "type": "MOD"
+	},
+	{
 		"names": [
 			"HYP(SPACE)"
 		],

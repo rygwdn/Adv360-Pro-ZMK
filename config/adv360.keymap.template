@@ -15,6 +15,7 @@
 {{behaviour_includes}}
 
 #define HYP(key) LS(LC(LA(LG(key)))
+#define HYPER LS(LC(LA(LGUI)))
 
 / {
   behaviors {
