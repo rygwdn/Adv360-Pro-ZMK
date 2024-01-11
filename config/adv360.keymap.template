@@ -14,6 +14,8 @@
 #include <behaviors.dtsi>
 {{behaviour_includes}}
 
+#define HYP(key) LS(LC(LA(LG(key)))
+
 / {
   behaviors {
     #include "macros.dtsi"
