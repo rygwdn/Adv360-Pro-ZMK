@@ -119,30 +119,197 @@
 		"type": "UD"
 	},
 	{
-	    "names": [
-	      "HYP(code)",
-	      "HYPER"
-	    ],
-	    "symbol": "❖",
-	    "description": "Hyper Key (CTRL + COMMAND + ALT + SHIFT)",
-	    "context": "Keyboard",
-	    "clarify": false,
-	    "documentation": "",
-	    "os": {
-	      "windows": true,
-	      "linux": true,
-	      "android": true,
-	      "macos": true,
-	      "ios": true
-	    },
-	    "footnotes": {},
-	    "type": "MOD"
+		"names": [
+			"HYPER"
+		],
+		"description": "Hyper Key (CTRL + COMMAND + ALT + SHIFT)",
+		"clarify": false,
+		"documentation": "",
+		"os": {
+			"windows": true,
+			"linux": true,
+			"android": true,
+			"macos": true,
+			"ios": true
+		},
+		"footnotes": {},
+		"type": "MOD"
+	},
+	{
+		"names": [
+			"HYP"
+		],
+		"description": "Hyper Key (CTRL + COMMAND + ALT + SHIFT)",
+		"clarify": false,
+		"documentation": "",
+		"os": {
+			"windows": true,
+			"linux": true,
+			"android": true,
+			"macos": true,
+			"ios": true
+		},
+		"footnotes": {},
+		"type": "MOD"
 	},
 	{
 		"names": [
 			"HYP(SPACE)"
 		],
 		"description": "HYP(SPACE)",
+		"clarify": false,
+		"documentation": "",
+		"os": {
+			"windows": true,
+			"linux": true,
+			"android": true,
+			"macos": true,
+			"ios": true
+		},
+		"footnotes": {},
+		"type": "UD"
+	},
+	{
+		"names": [
+			"HYP(E)"
+		],
+		"description": "HYP(E)",
+		"clarify": false,
+		"documentation": "",
+		"os": {
+			"windows": true,
+			"linux": true,
+			"android": true,
+			"macos": true,
+			"ios": true
+		},
+		"footnotes": {},
+		"type": "UD"
+	},
+	{
+		"names": [
+			"HYP(D)"
+		],
+		"description": "HYP(D)",
+		"clarify": false,
+		"documentation": "",
+		"os": {
+			"windows": true,
+			"linux": true,
+			"android": true,
+			"macos": true,
+			"ios": true
+		},
+		"footnotes": {},
+		"type": "UD"
+	},
+	{
+		"names": [
+			"HYP(C)"
+		],
+		"description": "HYP(C)",
+		"clarify": false,
+		"documentation": "",
+		"os": {
+			"windows": true,
+			"linux": true,
+			"android": true,
+			"macos": true,
+			"ios": true
+		},
+		"footnotes": {},
+		"type": "UD"
+	},
+	{
+		"names": [
+			"HYP(W)"
+		],
+		"description": "HYP(W)",
+		"clarify": false,
+		"documentation": "",
+		"os": {
+			"windows": true,
+			"linux": true,
+			"android": true,
+			"macos": true,
+			"ios": true
+		},
+		"footnotes": {},
+		"type": "UD"
+	},
+	{
+		"names": [
+			"HYP(S)"
+		],
+		"description": "HYP(S)",
+		"clarify": false,
+		"documentation": "",
+		"os": {
+			"windows": true,
+			"linux": true,
+			"android": true,
+			"macos": true,
+			"ios": true
+		},
+		"footnotes": {},
+		"type": "UD"
+	},
+	{
+		"names": [
+			"HYP(X)"
+		],
+		"description": "HYP(X)",
+		"clarify": false,
+		"documentation": "",
+		"os": {
+			"windows": true,
+			"linux": true,
+			"android": true,
+			"macos": true,
+			"ios": true
+		},
+		"footnotes": {},
+		"type": "UD"
+	},
+	{
+		"names": [
+			"HYP(R)"
+		],
+		"description": "HYP(R)",
+		"clarify": false,
+		"documentation": "",
+		"os": {
+			"windows": true,
+			"linux": true,
+			"android": true,
+			"macos": true,
+			"ios": true
+		},
+		"footnotes": {},
+		"type": "UD"
+	},
+	{
+		"names": [
+			"HYP(F)"
+		],
+		"description": "HYP(F)",
+		"clarify": false,
+		"documentation": "",
+		"os": {
+			"windows": true,
+			"linux": true,
+			"android": true,
+			"macos": true,
+			"ios": true
+		},
+		"footnotes": {},
+		"type": "UD"
+	},
+	{
+		"names": [
+			"HYP(V)"
+		],
+		"description": "HYP(V)",
 		"clarify": false,
 		"documentation": "",
 		"os": {
