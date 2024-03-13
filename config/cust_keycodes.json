@@ -137,7 +137,7 @@
 	},
 	{
 		"names": [
-			"HYP()"
+			"HYP(code)"
 		],
 		"description": "Hyper Key (CTRL + COMMAND + ALT + SHIFT)",
 		"clarify": false,
