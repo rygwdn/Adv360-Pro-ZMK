@@ -8,5 +8,13 @@
 		"code": "&cmd_tabber",
 		"name": "CmdTabber",
 		"params": []
+	},
+	{
+		"code": "HYPER(F10)",
+		"name": "HYPER(F10)",
+		"params": [
+			"code"
+		],
+		"type": "UD"
 	}
 ]

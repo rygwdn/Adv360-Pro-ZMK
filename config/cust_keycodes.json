@@ -120,8 +120,7 @@
 	},
 	{
 		"names": [
-			"HYPER",
-			"HYP(code)"
+			"HYPER"
 		],
 		"description": "Hyper Key (CTRL + COMMAND + ALT + SHIFT)",
 		"clarify": false,
@@ -135,5 +134,56 @@
 		},
 		"footnotes": {},
 		"type": "MOD"
+	},
+	{
+		"names": [
+			"HYP"
+		],
+		"description": "Hyper Key (CTRL + COMMAND + ALT + SHIFT)",
+		"clarify": false,
+		"documentation": "",
+		"os": {
+			"windows": true,
+			"linux": true,
+			"android": true,
+			"macos": true,
+			"ios": true
+		},
+		"footnotes": {},
+		"type": "MOD"
+	},
+	{
+		"names": [
+			"HYPER(F10)"
+		],
+		"description": "HYPER(F10)",
+		"clarify": false,
+		"documentation": "",
+		"os": {
+			"windows": true,
+			"linux": true,
+			"android": true,
+			"macos": true,
+			"ios": true
+		},
+		"footnotes": {},
+		"type": "UD"
+	},
+	{
+		"names": [
+			"HYPER(F7)"
+		],
+		"description": "HYPER(F7)",
+		"clarify": false,
+		"documentation": "",
+		"os": {
+			"windows": true,
+			"linux": true,
+			"android": true,
+			"macos": true,
+			"ios": true
+		},
+		"footnotes": {},
+		"type": "UD"
 	}
 ]
