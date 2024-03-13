@@ -9,7 +9,7 @@ manifest:
   projects:
     - name: zmk
       remote: rygwdn
-      revision: adv360-z3.2-rygwdn
+      revision: adv360-z3.2-3-rygwdn
       import: app/west.yml
   self:
     path: config
