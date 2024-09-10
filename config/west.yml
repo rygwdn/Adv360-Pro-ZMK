@@ -6,10 +6,17 @@ manifest:
       url-base: https://github.com/refil
     - name: rygwdn
       url-base: https://github.com/rygwdn
+    - name: dhruvinsh
+      url-base: https://github.com/dhruvinsh
   projects:
     - name: zmk
-      remote: rygwdn
-      revision: adv360-z3.5-rygwdn
       import: app/west.yml
+      remote: refil
+      revision: adv360-z3.5
+      #remote: rygwdn
+      #revision: adv360-z3.5-rygwdn
+    - name: zmk-tri-state
+      remote: dhruvinsh
+      revision: main
   self:
     path: config
