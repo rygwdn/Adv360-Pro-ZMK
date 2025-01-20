@@ -18,5 +18,8 @@
 #     artifact-name: corne_left_with_studio
 #
 ---
-board: ["adv360"]
-shield: ["adv360_left", "adv360_right"]
+#board: ["adv360"]
+#shield: ["adv360_left", "adv360_right"]
+include:
+  - board: adv360_left
+  - board: adv360_right
