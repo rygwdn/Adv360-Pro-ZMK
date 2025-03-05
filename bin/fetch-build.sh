@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 build_name="Build ZMK firmware"
 
 rm -f firmware/*
@@ -12,9 +14,13 @@ if [[ -z $run ]]; then
   exit 1
 fi
 
-if ! gh run download -n firmware -D firmware/ "$run"; then
-  exit 1
-fi
+gh run watch "$run" --exit-status
 
-echo "Fetched build:"
-GH_PAGER='' gh run view "$run"
+echo "Fetching build:"
+GH_PAGER='' gh run view "$run" --exit-status
+
+gh run download -n firmware -D firmware/ "$run"
+
+echo
+echo "Downloaded"
+ls -1 firmware/ | sed 's/^/  - /'
