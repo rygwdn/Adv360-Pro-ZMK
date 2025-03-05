@@ -1,0 +1,135 @@
+#!/bin/bash
+
+# Check for required argument
+if [ $# -lt 1 ]; then
+    echo "Usage: $0 [left|right|both]"
+    echo "  left: Flash the left keyboard"
+    echo "  right: Flash the right keyboard"
+    echo "  both: Flash both keyboards (left first, then right)"
+    exit 1
+fi
+
+SIDE="$1"
+VOLUME="/Volumes/ADV360PRO"
+MAX_WAIT_TIME=30  # Maximum time to wait in seconds
+
+# Function to wait for the volume to become available
+wait_for_volume() {
+    local side=$1
+    local instructions=("$2" "$3" "$4" "$5")
+    
+    echo "Volume $VOLUME not found. Please follow these steps:"
+    echo ""
+    for line in "${instructions[@]}"; do
+        if [ -n "$line" ]; then
+            echo "$line"
+        fi
+    done
+    echo ""
+    echo "Waiting for $VOLUME to become available (timeout: ${MAX_WAIT_TIME}s)..."
+    
+    # Wait for the volume to become available
+    waited=0
+    while [ ! -d "$VOLUME" ] && [ $waited -lt $MAX_WAIT_TIME ]; do
+        sleep 1
+        waited=$((waited + 1))
+        if [ $((waited % 5)) -eq 0 ]; then
+            echo "Still waiting... ($waited seconds elapsed)"
+        fi
+    done
+    
+    if [ ! -d "$VOLUME" ]; then
+        echo "Timeout waiting for $VOLUME. Please make sure the keyboard is in bootloader mode."
+        echo "You can also press the physical reset button on the keyboard to enter bootloader mode."
+        echo "See the README.md for more details."
+        return 1
+    fi
+    
+    echo "Volume $VOLUME is now available."
+    return 0
+}
+
+# Function to flash firmware to the keyboard
+flash_firmware() {
+    local side=$1
+    local firmware_file="firmware/adv360_${side}-zmk.uf2"
+    
+    echo "Copying $firmware_file to $VOLUME..."
+    cp "$firmware_file" "$VOLUME/"
+    
+    echo "Firmware flashed successfully!"
+    if [ "$side" == "left" ]; then
+        echo "The keyboard will disconnect automatically. Turn it back on with the switch."
+    else
+        echo "The keyboard will disconnect automatically. Unplug the right side keyboard and turn it back on."
+    fi
+    
+    # Wait for volume to disappear
+    echo "Waiting for device to disconnect..."
+    waited=0
+    while [ -d "$VOLUME" ] && [ $waited -lt 10 ]; do
+        sleep 1
+        waited=$((waited + 1))
+    done
+    echo "Device disconnected."
+}
+
+# Function to flash left keyboard
+flash_left() {
+    if [ ! -d "$VOLUME" ]; then
+        left_instructions=(
+            "1. Connect the left side keyboard to USB."
+            "2. Press Mod+macro1 to put the left side into bootloader mode; it should attach to your computer as a USB drive."
+            "3. Wait for the drive to mount as $VOLUME"
+            ""
+        )
+        wait_for_volume "left" "${left_instructions[@]}" || return 1
+    fi
+    
+    flash_firmware "left"
+    return 0
+}
+
+# Function to flash right keyboard
+flash_right() {
+    if [ ! -d "$VOLUME" ]; then
+        right_instructions=(
+            "1. Make sure the left side keyboard is turned on."
+            "2. Connect the right side keyboard to USB to power it on."
+            "3. Press Mod+macro3 to put the right side into bootloader mode; it should attach as a USB drive."
+            "4. Wait for the drive to mount as $VOLUME"
+        )
+        wait_for_volume "right" "${right_instructions[@]}" || return 1
+    fi
+    
+    flash_firmware "right"
+    return 0
+}
+
+# Main execution
+case "$SIDE" in
+    "left")
+        flash_left
+        ;;
+    "right")
+        flash_right
+        ;;
+    "both")
+        echo "=== Flashing left keyboard ==="
+        if flash_left; then
+            echo ""
+            echo "=== Flashing right keyboard ==="
+            echo "Please wait a moment for the left keyboard to reboot..."
+            sleep 5
+            flash_right
+        else
+            echo "Failed to flash left keyboard. Aborting."
+            exit 1
+        fi
+        ;;
+    *)
+        echo "Invalid argument: $SIDE"
+        echo "Usage: $0 [left|right|both]"
+        exit 1
+        ;;
+esac 

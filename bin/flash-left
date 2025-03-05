@@ -1,3 +1,0 @@
-#!/bin/bash
-
-cp firmware/adv360_left-zmk.uf2 /Volumes/ADV360PRO/
