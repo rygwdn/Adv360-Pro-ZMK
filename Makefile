@@ -9,7 +9,16 @@ SELINUX1 := :z
 SELINUX2 := ,z
 endif
 
-.PHONY: all left clean_firmware clean_image clean
+.PHONY: all left clean_firmware clean_image clean fetch flash view
+
+fetch:
+	./bin/fetch-build.sh
+
+flash:
+	./bin/flash both
+
+view:
+	GH_PAGER='' gh run view --web
 
 all:
 	$(shell bin/get_version_local.sh clique >> /dev/null)

@@ -45,7 +45,7 @@
   65 66 67 \
   52
 
-#define HYP(KEY) &kp LS(LC(LA(LG(KEY))))
+#define HYP(KEY)  LS(LC(LA(LG(KEY))))
 
 / {
   behaviors {
