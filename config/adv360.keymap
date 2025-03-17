@@ -148,11 +148,11 @@
     layer_Move {
       display-name = "Move";
       bindings = <
-      &trans  &trans                 &trans        &trans           &trans         &trans                 &trans                                                       &trans    &trans                 &trans    &trans  &trans     &trans  &trans
-      &trans  &kp LS(LC(LA(LG(Q))))  &kp LG(LEFT)  &kp UP           &kp LG(RIGHT)  &alt_tabber            &kp PG_UP                                                    &trans    &trans                 &trans    &trans  &trans     &trans  &trans
-      &trans  &kp LEFT_SHIFT         &kp LEFT      &kp DOWN         &kp RIGHT      &cmd_tabber            &kp PG_DN     &trans        &trans      &trans  &trans       &trans    &kp LEFT               &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-      &trans  &trans                 &kp LC(LEFT)  &msc MOVE_Y(-15) &kp LC(RIGHT)  &kp LS(LC(LA(LG(B))))                              &trans      &trans                         &kp LS(LC(LA(LG(N))))  &trans    &trans  &trans     &trans  &trans
-      &trans  &trans                 &mkp LCLK     &msc MOVE_Y(15)  &mkp RCLK                             &trans        &trans        &trans      &trans  &trans  &trans                                &trans    &trans  &trans     &trans  &trans
+      &trans  &trans                 &trans        &trans           &trans         &trans                 &trans                                                          &trans    &trans                 &trans    &trans  &trans     &trans  &trans
+      &trans  &kp LS(LC(LA(LG(Q))))  &kp LG(LEFT)  &kp UP           &kp LG(RIGHT)  &alt_tabber            &kp PG_UP                                                       &trans    &trans                 &trans    &trans  &trans     &trans  &trans
+      &trans  &kp LEFT_SHIFT         &kp LEFT      &kp DOWN         &kp RIGHT      &cmd_tabber            &kp PG_DN     &trans        &trans      &trans  &trans          &trans    &kp LEFT               &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+      &trans  &trans                 &kp LC(LEFT)  &msc MOVE_Y(-15) &kp LC(RIGHT)  &kp LS(LC(LA(LG(B))))                              &trans      &trans                            &kp LS(LC(LA(LG(N))))  &trans    &trans  &trans     &trans  &trans
+      &trans  &trans                 &mkp LCLK     &msc MOVE_Y(15)  &mkp RCLK                             &trans        &trans        &trans      &trans  &trans  &kp HYP(ENTER)    &trans    &trans  &trans     &trans  &trans
       >;
     };
 
