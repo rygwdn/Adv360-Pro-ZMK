@@ -54,7 +54,8 @@
       #binding-cells = <2>;
       flavor = "balanced";
       tapping-term-ms = <280>;
-      quick-tap-ms = <175>;
+      quick-tap-ms = <280>;
+      //global-quick-tap-ms = <150>;
       require-prior-idle-ms = <100>;
       bindings = <&kp>, <&kp>;
       hold-trigger-key-positions = <KEYS_R THUMBS_R THUMBS_L>;
@@ -66,7 +67,8 @@
       #binding-cells = <2>;
       flavor = "balanced";
       tapping-term-ms = <280>;
-      quick-tap-ms = <175>;
+      quick-tap-ms = <280>;
+      //global-quick-tap-ms = <150>;
       require-prior-idle-ms = <100>;
       bindings = <&kp>, <&kp>;
       hold-trigger-key-positions = <KEYS_L THUMBS_L THUMBS_R>;
@@ -77,7 +79,6 @@
       compatible = "zmk,behavior-tri-state";
       #binding-cells = <0>;
       bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-
       ignored-key-positions = <29>, <46>;
     };
 
@@ -85,7 +86,6 @@
       compatible = "zmk,behavior-tri-state";
       #binding-cells = <0>;
       bindings = <&kt LCMD>, <&kp TAB>, <&kt LCMD>;
-
       ignored-key-positions = <29>, <46>;
     };
 
