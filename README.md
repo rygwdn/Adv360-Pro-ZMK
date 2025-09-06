@@ -1,8 +1,8 @@
 # Kinesis Advantage 360 Pro ZMK Config
 
-This is a fork of the default Advantage 360 configuration with customizations which is edited via [this web based GUI](https://nickcoutsos.github.io/keymap-editor/).
+My personal Advantage 360 configuration.
 
-For detailed instructions, see https://github.com/KinesisCorporation/Adv360-Pro-ZMK
+Uses vanilla ZMK main branch with optimized settings in `adv360.conf`.
 
 
 ## Flashing firmware
