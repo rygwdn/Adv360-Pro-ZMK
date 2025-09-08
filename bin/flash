@@ -52,7 +52,7 @@ wait_for_volume() {
 # Function to flash firmware to the keyboard
 flash_firmware() {
     local side=$1
-    local firmware_file="firmware/adv360_${side}-zmk.uf2"
+    local firmware_file="firmware/adv360pro_${side}-zmk.uf2"
     
     echo "Copying $firmware_file to $VOLUME..."
     cp "$firmware_file" "$VOLUME/"
