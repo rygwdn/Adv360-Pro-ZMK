@@ -32,6 +32,20 @@
   46 47 48 49 50 51 \
   60 61 62 63 64
 
+#define KEYS_L_NON_WORD \
+                    6 \
+  14                20 \
+  28                34 \
+  46                \
+  60 61 62 63
+
+#define KEYS_R_NON_WORD \
+  7                    \
+  21                   \
+  39                   \
+                 59 \
+  71       74 75
+
 #define THUMBS_R \
   37 38 \
   68 69 70 \
@@ -52,11 +66,11 @@
       flavor = "balanced";
       tapping-term-ms = <280>;
       quick-tap-ms = <280>;
-      //global-quick-tap-ms = <150>;
       require-prior-idle-ms = <100>;
       bindings = <&kp>, <&kp>;
       hold-trigger-key-positions = <KEYS_R THUMBS_R THUMBS_L>;
       hold-trigger-on-release;
+      idle-ignore-key-positions = <KEYS_R THUMBS_R THUMBS_L KEYS_L_NON_WORD>;
     };
 
     hmr: homerow_mods_right {
@@ -65,11 +79,11 @@
       flavor = "balanced";
       tapping-term-ms = <280>;
       quick-tap-ms = <280>;
-      //global-quick-tap-ms = <150>;
       require-prior-idle-ms = <100>;
       bindings = <&kp>, <&kp>;
       hold-trigger-key-positions = <KEYS_L THUMBS_L THUMBS_R>;
       hold-trigger-on-release;
+      idle-ignore-key-positions = <KEYS_L THUMBS_L THUMBS_R KEYS_R_NON_WORD>;
     };
 
     alt_tabber: alt_tabber {
@@ -89,7 +103,6 @@
     blt: balanced_layer_tap {
       compatible = "zmk,behavior-hold-tap";
       bindings = <&mo>, <&kp>;
-      #binding-cells = <2>;
       tapping-term-ms = <200>;
       flavor = "hold-preferred";
     };

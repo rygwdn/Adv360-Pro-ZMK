@@ -8,11 +8,11 @@ manifest:
       url-base: https://github.com/urob
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      # remote: zmkfirmware
+      # revision: main
+      remote: rygwdn
+      revision: ignore-idle-key-positions
       import: app/west.yml
-      #remote: rygwdn
-      #revision: adv360-z3.5-rygwdn
     - name: zmk-tri-state
       remote: urob
       revision: v0.2.1
