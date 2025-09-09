@@ -70,7 +70,7 @@
       bindings = <&kp>, <&kp>;
       hold-trigger-key-positions = <KEYS_R THUMBS_R THUMBS_L>;
       hold-trigger-on-release;
-      idle-ignore-key-positions = <KEYS_R THUMBS_R THUMBS_L KEYS_L_NON_WORD>;
+      //idle-ignore-key-positions = <KEYS_R THUMBS_R THUMBS_L KEYS_L_NON_WORD>;
     };
 
     hmr: homerow_mods_right {
@@ -83,7 +83,7 @@
       bindings = <&kp>, <&kp>;
       hold-trigger-key-positions = <KEYS_L THUMBS_L THUMBS_R>;
       hold-trigger-on-release;
-      idle-ignore-key-positions = <KEYS_L THUMBS_L THUMBS_R KEYS_R_NON_WORD>;
+      //idle-ignore-key-positions = <KEYS_L THUMBS_L THUMBS_R KEYS_R_NON_WORD>;
     };
 
     alt_tabber: alt_tabber {
