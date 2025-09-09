@@ -102,6 +102,7 @@
 
     blt: balanced_layer_tap {
       compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
       bindings = <&mo>, <&kp>;
       tapping-term-ms = <200>;
       flavor = "hold-preferred";
