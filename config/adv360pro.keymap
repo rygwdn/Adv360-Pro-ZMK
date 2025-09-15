@@ -32,20 +32,6 @@
   46 47 48 49 50 51 \
   60 61 62 63 64
 
-#define KEYS_L_NON_WORD \
-                    6 \
-  14                20 \
-  28                34 \
-  46                \
-  60 61 62 63
-
-#define KEYS_R_NON_WORD \
-  7                    \
-  21                   \
-  39                   \
-                 59 \
-  71       74 75
-
 #define THUMBS_R \
   37 38 \
   68 69 70 \
@@ -70,7 +56,11 @@
       bindings = <&kp>, <&kp>;
       hold-trigger-key-positions = <KEYS_R THUMBS_R THUMBS_L>;
       hold-trigger-on-release;
-      idle-ignore-key-positions = <KEYS_R THUMBS_R THUMBS_L KEYS_L_NON_WORD>;
+      idle-consider-key-positions = <
+        15 16 17 18 19
+        29 30 31 32 33
+        47 48 49 50 51
+      >;
     };
 
     hmr: homerow_mods_right {
@@ -83,7 +73,12 @@
       bindings = <&kp>, <&kp>;
       hold-trigger-key-positions = <KEYS_L THUMBS_L THUMBS_R>;
       hold-trigger-on-release;
-      idle-ignore-key-positions = <KEYS_L THUMBS_L THUMBS_R KEYS_R_NON_WORD>;
+      idle-consider-key-positions = <
+        22 23 24 25 26 27
+        40 41 42 43 44 45
+        54 55 56 57 58
+              72 73
+      >;
     };
 
     alt_tabber: alt_tabber {
